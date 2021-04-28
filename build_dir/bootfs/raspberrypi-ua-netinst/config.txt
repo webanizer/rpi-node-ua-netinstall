@@ -1,0 +1,8 @@
+[all]
+os_prefix=raspberrypi-ua-netinst/
+initramfs initramfs.gz
+gpu_mem=16
+[pi3]
+dtoverlay=disable-bt
+[pi4]
+dtoverlay=disable-bt

@@ -1,3 +1,25 @@
 # To customize the raspberrypi-unattended-installer:
 #
 # Place your settings in this file as described in the README.md or in the advanced documentation.
+# To customize the raspberrypi-unattended-installer:
+#
+# Place your settings in this file as described in the README.md or in the advanced documentation.
+
+preset server
+packages tailscale node-red htop mc
+firmware_packages 1
+use_systemd_services 1
+username blockpro
+userpw password
+userperms_admin 1
+rootpw	ChangeM3
+root_ssh_pwlogin 1
+hostname blpro-lite-node
+timezone Europe/Berlin
+keyboard_layout de
+locales de_DE.UTF-8
+system_default_locale de_DE.UTF-8
+gpu_mem 16
+rootfstype ext4
+final_action reboot
+watchdog_enable 1
