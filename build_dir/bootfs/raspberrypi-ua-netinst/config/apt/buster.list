@@ -1,0 +1,2 @@
+# Tailscale packages for raspbian buster
+deb https://pkgs.tailscale.com/stable/raspbian buster main

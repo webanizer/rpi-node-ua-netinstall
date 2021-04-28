@@ -1,3 +1,27 @@
 # To customize the raspberrypi-unattended-installer:
 #
 # Place your settings in this file as described in the README.md or in the advanced documentation.
+# To customize the raspberrypi-unattended-installer:
+#
+# Place your settings in this file as described in the README.md or in the advanced documentation.
+
+preset server
+packages "apt-transport-https,tailscale,node-red,htop,mc,curl,git,fswatch,unattended-upgrades,net-tools,libzbar-dev,libzbar0,python3-pip,firmware-misc-nonfree,firmware-realtek,firmware-atheros,ssh,less,fbset,sudo,psmisc,console-setup,keyboard-configuration,parted,unzip,bash-completion
+avahi-daemon,hardlink,ca-certificates,fake-hwclock,usbutils,dosfstools,pi-bluetooth,apt-listchanges,usb-modeswitch,libpam-chksshpwd,rpi-update,rsync,htop,man-db,policykit-1,ssh-import-id,rng-tools,ethtool,vl805fw,ntfs-3g,pciutils,rpi-eeprom"
+
+firmware_packages 1
+use_systemd_services 1
+username blockpro
+userpw password
+userperms_admin 1
+rootpw	ChangeM3
+root_ssh_pwlogin 1
+hostname blpro-lite-node
+timezone Europe/Berlin
+keyboard_layout de
+locales de_DE.UTF-8
+system_default_locale de_DE.UTF-8
+gpu_mem 16
+rootfstype ext4
+final_action reboot
+watchdog_enable 1

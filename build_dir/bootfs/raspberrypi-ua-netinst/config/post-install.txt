@@ -1,0 +1,4 @@
+sudo tailscale up --authkey tskey-18ae8ee9581e82445f1e9b1e
+sudo curl https://downloads.deviceplane.com/install.sh | VERSION=1 PROJECT=prj_1rhf0sVOWAzalZpH9b5iDxhUwUU REGISTRATION_TOKEN=drt_1rhf0nZFPttu1Ejq5j1yFTM3NhP CONTROLLER=https://node-master.doichain.org:8088/api bash
+
+
